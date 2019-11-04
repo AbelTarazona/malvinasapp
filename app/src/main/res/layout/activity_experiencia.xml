@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingVertical="20dp"
+    android:background="@android:color/white">
+
+    <LinearLayout
+        android:id="@+id/mainly"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/spacing_mlarge"
+            android:layout_marginRight="@dimen/spacing_mlarge"
+            android:text="¡Bienvenido!"
+            android:textSize="40sp"
+            android:textStyle="bold"
+            android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+             />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="@dimen/spacing_large" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/spacing_mlarge"
+            android:layout_marginRight="@dimen/spacing_mlarge"
+            android:text="Queremos mejorar tu experiencia de compra, selecciona 3 productos que te interesan más del Conglomerado Las Malvinas."
+            android:textSize="20sp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+            android:textColor="@color/grey_40" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="@dimen/spacing_large" />
+
+        <com.google.android.flexbox.FlexboxLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/spacing_large"
+            android:layout_marginRight="@dimen/spacing_large"
+            app:flexWrap="wrap"
+            app:justifyContent="flex_start">
+
+            <Button
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn_rounded_grey_blue"
+                android:onClick="outletTypeClick"
+                android:text="Ferretería"
+                android:textAllCaps="false"
+                android:textColor="@color/grey_40" />
+
+
+
+            <Button
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn_rounded_grey_blue"
+                android:onClick="outletTypeClick"
+                android:text="Cocina"
+                android:textAllCaps="false"
+                android:textColor="@color/grey_40" />
+
+            <Button
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn_rounded_grey_blue"
+                android:onClick="outletTypeClick"
+                android:text="Deportes"
+                android:textAllCaps="false"
+                android:textColor="@color/grey_40" />
+
+            <Button
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn_rounded_grey_blue"
+                android:onClick="outletTypeClick"
+                android:text="Imprentas"
+                android:textAllCaps="false"
+                android:textColor="@color/grey_40" />
+
+            <Button
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn_rounded_grey_blue"
+                android:onClick="outletTypeClick"
+                android:text="Ropa y calzado"
+                android:textAllCaps="false"
+                android:textColor="@color/grey_40" />
+            <Button
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn_rounded_grey_blue"
+                android:onClick="outletTypeClick"
+                android:text="Tecnología"
+                android:textAllCaps="false"
+                android:textColor="@color/grey_40" />
+
+            <Button
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn_rounded_grey_blue"
+                android:onClick="outletTypeClick"
+                android:text="Mantenimiento y producción industrial"
+                android:textAllCaps="false"
+                android:textColor="@color/grey_40" />
+
+            <Button
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn_rounded_grey_blue"
+                android:onClick="outletTypeClick"
+                android:text="Equipo de sonido y autoradio"
+                android:textAllCaps="false"
+                android:textColor="@color/grey_40" />
+
+        </com.google.android.flexbox.FlexboxLayout>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="@dimen/spacing_large" />
+
+
+
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnContinuar"
+        style="@style/Button.Primary.Borderless"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/spacing_mlarge"
+        android:layout_marginRight="@dimen/spacing_mlarge"
+        android:layout_weight="1"
+        android:background="@drawable/btn_rect_primary"
+        android:text="Continuar"
+        android:textAllCaps="false"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:textColor="@android:color/white" />
+
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/loader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        android:visibility="gone"
+        android:layout_centerInParent="true"
+        app:lottie_fileName="cart.json"/>
+
+</RelativeLayout>
